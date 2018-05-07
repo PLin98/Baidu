@@ -1,0 +1,36 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	line-height: 50px;
+	font-family: "微软雅黑";
+	text-decoration: none;
+}
+
+
+h1{
+	font-size: 32px;
+}
+h3{
+	font-size: 22px;
+	margin-left: 0px;
+	clear: both;
+}
+
+.div{
+	width: 900px;
+	height: 1200px;
+	margin: 10px 20px;
+}
+.p1{
+	float: left;
+	
+}
+.p2{
+	float: left;
+	margin-left: 10%;
+}
+.p3{
+	float: left;
+	margin-left: 10%;
+}
