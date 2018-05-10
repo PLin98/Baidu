@@ -1,0 +1,33 @@
+/*设置表单元素样式*/
+label[for="toggle"]{
+	font-size: 3rem;
+	position: absolute;
+	top: 4px;
+	right: 5px;
+	z-index: 1;
+	cursor: pointer;
+}
+/*第一条label样式的规则，我们有：
+设置字体大小使图标更美观。
+设置为绝对定位，使用top属性和right属性来让他能很合适的位于右上角。
+设置z-index属性为1——因此当信息面板被赋予样式和显示的时候，不会覆盖我们的图标；相反图标依然会位于最上层能够再次被按下来隐藏信息平板。
+使用cursor属性来说改变鼠标的指针，当鼠标悬浮在图标上面的时候变成一个手形指针（就像你看到的当悬浮在链接上一样），
+作为一个额外的可视化线索告诉用户这个图标可以做一些有趣的事情*/
+
+/*设置面板的样式*/
+aside{
+	background-color: #A60000;
+	color: white;
+	width: 340px;
+	height: 98%;
+	padding: 10px 1%;
+	position: fixed;
+	top: 0;
+	right: -370px;
+	transition:0.6s all; /*允许你在状态改变的时候平滑的过渡，而不是粗暴的“变”或“还原”*/
+	
+}
+/*设置选择后的状态*/
+input[type=checkbox]:checked+aside{
+	right: 0;
+}
